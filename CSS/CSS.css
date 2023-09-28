@@ -1,4 +1,4 @@
-*  {
+* {
     box-sizing: border-box;
 }
 
@@ -76,7 +76,7 @@ body {
     margin-bottom: 23px;
 }
 
-.film-description{
+.film-description {
     font-size: 16px;
     line-height: 150%;
     max-width: 560px;
@@ -85,35 +85,38 @@ body {
 .film-trailer {
     margin: auto;
 }
-.film-details{
+
+.film-details {
     margin-top: 50px;
     display: flex;
     align-items: center;
 }
-.time{
+
+.time {
     display: flex;
     align-items: center;
 }
 
-.time-icon{
+.time-icon {
     margin-right: 14px;
 }
 
-.rating{
+.rating {
     display: flex;
     align-items: center;
     margin-left: 34px;
 }
 
-.rating-icon{
+.rating-icon {
     margin-right: 14px;
 }
-.rating-current{
+
+.rating-current {
     font-size: 24px;
     line-height: 150%;
 }
 
-.session{
+.session {
     margin-top: 62px;
     padding-top: 46px;
     padding-bottom: 63px;
@@ -125,17 +128,17 @@ body {
 }
 
 
-.session-date-block{
-display: flex;
+.session-date-block {
+    display: flex;
 }
 
-.session-label{
+.session-label {
     display: block;
     margin-bottom: 20px;
 }
 
 
-.session-date-item{
+.session-date-item {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -150,28 +153,28 @@ display: flex;
     transition: background-color 0.2s;
 }
 
-.session-month{
+.session-month {
     font-size: 16px;
     line-height: 19px;
 }
 
-.session-day{
+.session-day {
     font-weight: 900;
     font-size: 30px;
     line-height: 35px;
 }
 
-.session-week{
+.session-week {
     font-size: 19px;
     line-height: 22px;
 }
 
-.session-date-item:hover{
+.session-date-item:hover {
     background-color: #FE8E05;
     color: #311b5a;
 }
 
-.select{
+.select {
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
@@ -181,6 +184,84 @@ display: flex;
     margin-top: 15px;
 }
 
-.select-cinema{
+.select-cinema {
     min-width: 470px;
+}
+
+.scheme {
+    margin-bottom: 40px;
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+}
+
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+    fill: #FE8E05;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+.legend-label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.legend svg {
+    margin-right: 15px;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-label {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag{
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button{
+    display: block;
+    background: #fe8e05;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+    text-decoration: none;
 }
